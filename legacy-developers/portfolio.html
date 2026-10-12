@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery & Portfolio | Legacy Developers</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Sail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= SITE HEADER ================= -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="brand-logo">
+        <a href="index.html">
+          <span>Legacy</span>
+          <span>Developers</span>
+        </a>
+      </div>
+
+      <div class="header-actions">
+        <a href="#" class="login-btn open-login-modal">
+          <div class="login-avatar"><i class="fa-solid fa-user"></i></div>
+          <span>Log In</span>
+        </a>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <div class="nav-container">
+        <ul class="nav-list" id="mainNavList">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="our-team.html" class="nav-link">Our Team</a></li>
+          <li class="nav-item"><a href="landing-page.html" class="nav-link">Landing Page</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="pricing-plans.html" class="nav-link">Plans & Pricing <i class="fa-solid fa-angle-down" style="font-size:0.7rem; margin-left:3px;"></i></a>
+            <ul class="nav-dropdown">
+              <li><a href="pricing-plans.html" class="dropdown-link">Pricing Plans</a></li>
+              <li><a href="#" class="dropdown-link open-login-modal">My Subscriptions</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link active">Gallery</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PAGE TITLE BANNER -->
+    <section class="page-banner" style="height: 320px;">
+      <div class="banner-content">
+        <h1 class="banner-title">Our Recent Works</h1>
+        <p class="banner-desc">Welcome to our Gallery. Here you’ll find a curated selection of our work.</p>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="section">
+      <div class="gallery-intro">
+        <p style="font-size: 1.15rem; line-height: 1.9; color: var(--color-text);">
+          At Legacy Developers, we take pride in our work and the lasting impact we create through our projects. From stunning custom homes to large-scale commercial developments, our portfolio showcases our commitment to excellence, innovation, and quality craftsmanship.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All Works</button>
+        <button class="filter-btn" data-filter="architecture">Architecture</button>
+        <button class="filter-btn" data-filter="interior">Interiors</button>
+        <button class="filter-btn" data-filter="luxury">Luxury Estates</button>
+        <button class="filter-btn" data-filter="landscape">Landscapes</button>
+      </div>
+
+      <!-- Portfolio Masonry Grid -->
+      <div class="portfolio-masonry">
+        <!-- Item 1 -->
+        <div class="portfolio-item" data-category="architecture" data-lightbox data-caption="The Modern Glasshouse Residence">
+          <img src="https://static.wixstatic.com/media/a97bee_85b52a5d7b9c4cec86d591afcc36925a~mv2.jpg" alt="Modern Glasshouse">
+          <div class="portfolio-overlay">
+            <h4>Modern Glasshouse</h4>
+            <p>Architecture / Concept</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="portfolio-item" data-category="interior" data-lightbox data-caption="Minimalist Artisan Interior Living">
+          <img src="https://static.wixstatic.com/media/11062b_f2b967d92a3643b68bb61c6d5ac6d111~mv2.jpg" alt="Minimalist Artisan Living">
+          <div class="portfolio-overlay">
+            <h4>Artisan Living</h4>
+            <p>Interior Design</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="portfolio-item" data-category="luxury" data-lightbox data-caption="The Waterfront Villa Pavilion">
+          <img src="https://static.wixstatic.com/media/11062b_bbe8c1c80d7746379a4e00c8ec611199~mv2.jpg" alt="Waterfront Villa">
+          <div class="portfolio-overlay">
+            <h4>Waterfront Villa</h4>
+            <p>Luxury Estate</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="portfolio-item" data-category="architecture" data-lightbox data-caption="Urban Skyline Penthouse">
+          <img src="https://static.wixstatic.com/media/11062b_442ee5a9ccf94e9aa962bf4fe4369a15~mv2_d_6668_4445_s_4_2.jpg" alt="Skyline Penthouse">
+          <div class="portfolio-overlay">
+            <h4>Skyline Penthouse</h4>
+            <p>Architecture</p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="portfolio-item" data-category="luxury" data-lightbox data-caption="Magnolia Estate - Private Grounds">
+          <img src="https://static.wixstatic.com/media/ea26fd_875401e2d67b40e1969387a0248c731d~mv2_d_6720_4480_s_4_2.jpg" alt="Magnolia Estate">
+          <div class="portfolio-overlay">
+            <h4>Magnolia Estate</h4>
+            <p>Luxury Estate</p>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="portfolio-item" data-category="interior" data-lightbox data-caption="Master Suite Retreat">
+          <img src="https://static.wixstatic.com/media/ea26fd_bb30ad51551145aeb4e9348570e29b7b~mv2_d_6720_4480_s_4_2.jpg" alt="Master Suite">
+          <div class="portfolio-overlay">
+            <h4>Master Suite Retreat</h4>
+            <p>Interiors</p>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="portfolio-item" data-category="landscape" data-lightbox data-caption="Lakeview Shoreline Terrace">
+          <img src="https://static.wixstatic.com/media/ea26fd_720a028a68e240c2908ca458a0c9b5a8~mv2_d_6720_4480_s_4_2.jpg" alt="Lakeview Shoreline">
+          <div class="portfolio-overlay">
+            <h4>Lakeview Shoreline</h4>
+            <p>Landscape</p>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="portfolio-item" data-category="interior" data-lightbox data-caption="Spa-Inspired Granite Bath">
+          <img src="https://static.wixstatic.com/media/ea26fd_71de00e1e55e4ce4b185c31dbd9f65f6~mv2_d_3378_5122_s_4_2.jpg" alt="Spa-Inspired Bath">
+          <div class="portfolio-overlay">
+            <h4>Spa Bath Suite</h4>
+            <p>Interiors</p>
+          </div>
+        </div>
+
+        <!-- Item 9 -->
+        <div class="portfolio-item" data-category="landscape" data-lightbox data-caption="Sunset Terrace & Pool">
+          <img src="https://static.wixstatic.com/media/ea26fd_7688f939e2de420d9cae4c735616dadb~mv2_d_8256_5504_s_4_2.jpg" alt="Sunset Terrace">
+          <div class="portfolio-overlay">
+            <h4>Sunset Terrace</h4>
+            <p>Landscape</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER / GET IN TOUCH -->
+    <footer class="site-footer" id="contact-section">
+      <div class="footer-content">
+        <div class="footer-contact-info">
+          <h2 class="footer-title">Get In Touch</h2>
+          <ul class="contact-meta-list">
+            <li class="contact-meta-item">
+              <i class="fa-solid fa-location-dot meta-icon"></i>
+              <div>
+                <p><strong>Office Address</strong></p>
+                <p>123 Legacy Avenue<br>San Francisco, CA 94158</p>
+              </div>
+            </li>
+            <li class="contact-meta-item">
+              <i class="fa-solid fa-envelope meta-icon"></i>
+              <div>
+                <p><strong>Email Us</strong></p>
+                <p><a href="mailto:info@legacydevelopers.com">info@legacydevelopers.com</a></p>
+              </div>
+            </li>
+            <li class="contact-meta-item">
+              <i class="fa-solid fa-phone meta-icon"></i>
+              <div>
+                <p><strong>Call Directly</strong></p>
+                <p><a href="tel:1234567890">123-456-7890</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-form-wrapper">
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="galFirstName">First Name</label>
+              <input type="text" id="galFirstName" class="form-input" placeholder="e.g. John" required>
+            </div>
+            <div class="form-group">
+              <label for="galLastName">Last Name</label>
+              <input type="text" id="galLastName" class="form-input" placeholder="e.g. Doe" required>
+            </div>
+            <div class="form-group col-full">
+              <label for="galEmail">Email *</label>
+              <input type="email" id="galEmail" class="form-input" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group col-full">
+              <label for="galPhone">Phone</label>
+              <input type="tel" id="galPhone" class="form-input" placeholder="123-456-7890">
+            </div>
+            <div class="form-group col-full">
+              <label for="galComments">Comments</label>
+              <textarea id="galComments" class="form-textarea" placeholder="Inquire about any piece in our gallery..."></textarea>
+            </div>
+            <div class="form-success-alert"></div>
+            <button type="submit" class="btn btn-primary form-submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <p>© 2023 by Legacy Developers. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Pinned Social Bar -->
+  <aside class="pinned-social-bar">
+    <a href="https://facebook.com/wix" target="_blank" class="pinned-social-link"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://instagram.com/wix" target="_blank" class="pinned-social-link"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://yelp.com" target="_blank" class="pinned-social-link"><i class="fa-brands fa-yelp"></i></a>
+  </aside>
+
+  <!-- Floating Chat -->
+  <button class="floating-chat-btn" id="chatToggleBtn"><i class="fa-solid fa-message" style="font-size:1.4rem;"></i></button>
+  <div class="chat-modal" id="chatModal">
+    <div class="chat-header">
+      <h4>Legacy Chat</h4>
+      <button class="chat-close-btn" id="chatCloseBtn">&times;</button>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="chat-message bot">Interested in any architectural plan from our gallery? Message us anytime!</div>
+    </div>
+    <form class="chat-footer" id="chatForm">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Type a message..." required>
+      <button type="submit" class="btn btn-primary" style="padding:0.5rem 0.9rem; border-radius:50%;"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img src="" alt="Enlarged view" class="lightbox-img" id="lightboxImg">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn">&times;</button>
+      <h3 class="modal-title">Welcome</h3>
+      <p class="modal-subtitle">Log in to your account</p>
+      <form id="loginForm">
+        <div class="form-group" style="margin-bottom:1.2rem;">
+          <label>Email Address</label>
+          <input type="email" class="form-input" style="background:#f4f4f4; color:#222; border-color:#ccc;" placeholder="you@domain.com" required>
+        </div>
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label>Password</label>
+          <input type="password" class="form-input" style="background:#f4f4f4; color:#222; border-color:#ccc;" placeholder="••••••••" required>
+        </div>
+        <div class="modal-alert" style="display:none; padding:0.8rem; background:#E8F5E9; color:#2E7D32; border-radius:4px; margin-bottom:1rem; text-align:center;"></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Log In</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

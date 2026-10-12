@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Legacy Developers</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Sail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= SITE HEADER ================= -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="brand-logo">
+        <a href="index.html">
+          <span>Legacy</span>
+          <span>Developers</span>
+        </a>
+      </div>
+
+      <div class="header-actions">
+        <a href="#" class="login-btn open-login-modal">
+          <div class="login-avatar"><i class="fa-solid fa-user"></i></div>
+          <span>Log In</span>
+        </a>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <div class="nav-container">
+        <ul class="nav-list" id="mainNavList">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="our-team.html" class="nav-link">Our Team</a></li>
+          <li class="nav-item"><a href="landing-page.html" class="nav-link">Landing Page</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
+          <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="pricing-plans.html" class="nav-link">Plans & Pricing <i class="fa-solid fa-angle-down" style="font-size:0.7rem; margin-left:3px;"></i></a>
+            <ul class="nav-dropdown">
+              <li><a href="pricing-plans.html" class="dropdown-link">Pricing Plans</a></li>
+              <li><a href="#" class="dropdown-link open-login-modal">My Subscriptions</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link">Gallery</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PAGE TITLE BANNER -->
+    <section class="page-banner" style="height: 280px;">
+      <div class="banner-content">
+        <h1 class="banner-title" style="font-size: 3.5rem;">Our Services</h1>
+        <p class="banner-desc">Comprehensive architectural and construction services tailored to realize your dream vision.</p>
+      </div>
+    </section>
+
+    <!-- SERVICES CARDS SECTION -->
+    <section class="section">
+      <div class="services-container">
+        <!-- Service 1: Custom Home Building -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-house-chimney"></i></div>
+          <h2 class="service-title">Custom Home Building</h2>
+          <p class="service-desc">
+            At Legacy Developers, we specialize in crafting custom homes that reflect your unique style and vision. Our team is dedicated to bringing your dream home to life, from concept to completion.
+          </p>
+        </div>
+
+        <!-- Service 2: Renovation and Additions -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-hammer"></i></div>
+          <h2 class="service-title">Renovation and Additions</h2>
+          <p class="service-desc">
+            Enhance the beauty and functionality of your home with our renovation and addition services. Whether it's a kitchen upgrade or adding extra living space, we are committed to transforming your existing property into your ideal living space.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature Visual Strip with Video & High-End Image -->
+      <div class="services-feature-banner">
+        <div class="feature-media">
+          <video autoplay muted loop playsinline poster="https://static.wixstatic.com/media/11062b_1400d5c5de334faa95fd2772b400413df000.jpg">
+            <source src="https://video.wixstatic.com/video/11062b_1400d5c5de334faa95fd2772b400413d/720p/mp4/file.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="feature-content">
+          <h3>Elevate Your Living Experience</h3>
+          <p>
+            From custom carpentry and tailored floor layouts to luxurious bath retreats, our integrated design-build methodology ensures flawless precision at every phase.
+          </p>
+          <a href="#contact-section" class="btn btn-primary" style="align-self: flex-start;">Consult Our Specialists</a>
+        </div>
+      </div>
+
+      <!-- Remaining Services -->
+      <div class="services-container" style="grid-template-columns: repeat(3, 1fr);">
+        <!-- Service 3: Interior Design -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-couch"></i></div>
+          <h2 class="service-title">Interior Design</h2>
+          <p class="service-desc">
+            Create a captivating and inviting home interior with our professional interior design services. Our experts will work with you to curate a space that exudes elegance and comfort, tailored to your preferences and lifestyle.
+          </p>
+        </div>
+
+        <!-- Service 4: Expert Flooring Installation -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h2 class="service-title">Expert Flooring Installation</h2>
+          <p class="service-desc">
+            Elevate your space with our premium flooring solutions. Whether you prefer hardwood, tile, or luxurious carpeting, we provide top-quality materials and expert installation for a stunning finish.
+          </p>
+        </div>
+
+        <!-- Service 5: Bathroom Remodeling -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-bath"></i></div>
+          <h2 class="service-title">Bathroom Remodeling</h2>
+          <p class="service-desc">
+            Transform your bathroom into a luxurious retreat with our comprehensive remodeling services. From modern fixtures to spa-like features, we'll revamp your bathroom to achieve both style and functionality.
+          </p>
+        </div>
+      </div>
+
+      <!-- OUR APPROACH SECTION -->
+      <div class="approach-section">
+        <div class="section-title-wrap">
+          <span class="section-subtitle">Methodology</span>
+          <h2 class="section-title">Our Approach</h2>
+        </div>
+
+        <div class="approach-grid">
+          <div class="approach-item">
+            <div class="approach-step">Phase 01</div>
+            <h3 class="approach-title">Innovative Design</h3>
+            <p class="approach-text">
+              From initial concept to the final blueprint, our innovative design approach ensures that every detail is tailored to your specific needs and desires.
+            </p>
+          </div>
+
+          <div class="approach-item">
+            <div class="approach-step">Phase 02</div>
+            <h3 class="approach-title">Quality Construction</h3>
+            <p class="approach-text">
+              Craftsmanship and Quality: We utilize high-grade sustainable materials, cutting-edge building science, and strict safety guidelines to ensure generational longevity.
+            </p>
+          </div>
+
+          <div class="approach-item">
+            <div class="approach-step">Phase 03</div>
+            <h3 class="approach-title">Dedicated Support</h3>
+            <p class="approach-text">
+              Our team is committed to providing dedicated support throughout the entire construction process, ensuring a seamless and rewarding experience for our clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER / GET IN TOUCH -->
+    <footer class="site-footer" id="contact-section">
+      <div class="footer-content">
+        <div class="footer-contact-info">
+          <h2 class="footer-title">Get In Touch</h2>
+          <ul class="contact-meta-list">
+            <li class="contact-meta-item">
+              <i class="fa-solid fa-location-dot meta-icon"></i>
+              <div>
+                <p><strong>Office Address</strong></p>
+                <p>123 Legacy Avenue<br>San Francisco, CA 94158</p>
+              </div>
+            </li>
+            <li class="contact-meta-item">
+              <i class="fa-solid fa-envelope meta-icon"></i>
+              <div>
+                <p><strong>Email Us</strong></p>
+                <p><a href="mailto:info@legacydevelopers.com">info@legacydevelopers.com</a></p>
+              </div>
+            </li>
+            <li class="contact-meta-item">
+              <i class="fa-solid fa-phone meta-icon"></i>
+              <div>
+                <p><strong>Call Directly</strong></p>
+                <p><a href="tel:1234567890">123-456-7890</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-form-wrapper">
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="srvFirstName">First Name</label>
+              <input type="text" id="srvFirstName" class="form-input" placeholder="e.g. John" required>
+            </div>
+            <div class="form-group">
+              <label for="srvLastName">Last Name</label>
+              <input type="text" id="srvLastName" class="form-input" placeholder="e.g. Doe" required>
+            </div>
+            <div class="form-group col-full">
+              <label for="srvEmail">Email *</label>
+              <input type="email" id="srvEmail" class="form-input" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group col-full">
+              <label for="srvPhone">Phone</label>
+              <input type="tel" id="srvPhone" class="form-input" placeholder="123-456-7890">
+            </div>
+            <div class="form-group col-full">
+              <label for="srvComments">Comments / Service Inquiry</label>
+              <textarea id="srvComments" class="form-textarea" placeholder="Tell us which service you are interested in..."></textarea>
+            </div>
+            <div class="form-success-alert"></div>
+            <button type="submit" class="btn btn-primary form-submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <p>© 2023 by Legacy Developers. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Pinned Social Bar -->
+  <aside class="pinned-social-bar">
+    <a href="https://facebook.com/wix" target="_blank" class="pinned-social-link"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://instagram.com/wix" target="_blank" class="pinned-social-link"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://yelp.com" target="_blank" class="pinned-social-link"><i class="fa-brands fa-yelp"></i></a>
+  </aside>
+
+  <!-- Floating Chat -->
+  <button class="floating-chat-btn" id="chatToggleBtn"><i class="fa-solid fa-message" style="font-size:1.4rem;"></i></button>
+  <div class="chat-modal" id="chatModal">
+    <div class="chat-header">
+      <h4>Legacy Chat</h4>
+      <button class="chat-close-btn" id="chatCloseBtn">&times;</button>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="chat-message bot">Hello! Interested in our custom build or renovation services? Ask us anything!</div>
+    </div>
+    <form class="chat-footer" id="chatForm">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Type a message..." required>
+      <button type="submit" class="btn btn-primary" style="padding:0.5rem 0.9rem; border-radius:50%;"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn">&times;</button>
+      <h3 class="modal-title">Welcome</h3>
+      <p class="modal-subtitle">Log in to your account</p>
+      <form id="loginForm">
+        <div class="form-group" style="margin-bottom:1.2rem;">
+          <label>Email Address</label>
+          <input type="email" class="form-input" style="background:#f4f4f4; color:#222; border-color:#ccc;" placeholder="you@domain.com" required>
+        </div>
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label>Password</label>
+          <input type="password" class="form-input" style="background:#f4f4f4; color:#222; border-color:#ccc;" placeholder="••••••••" required>
+        </div>
+        <div class="modal-alert" style="display:none; padding:0.8rem; background:#E8F5E9; color:#2E7D32; border-radius:4px; margin-bottom:1rem; text-align:center;"></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Log In</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

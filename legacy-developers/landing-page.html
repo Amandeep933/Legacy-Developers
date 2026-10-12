@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page | Legacy Developers</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Sail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= SITE HEADER ================= -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="brand-logo">
+        <a href="index.html">
+          <span>Legacy</span>
+          <span>Developers</span>
+        </a>
+      </div>
+
+      <div class="header-actions">
+        <a href="#" class="login-btn open-login-modal">
+          <div class="login-avatar"><i class="fa-solid fa-user"></i></div>
+          <span>Log In</span>
+        </a>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <div class="nav-container">
+        <ul class="nav-list" id="mainNavList">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="our-team.html" class="nav-link">Our Team</a></li>
+          <li class="nav-item"><a href="landing-page.html" class="nav-link active">Landing Page</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="pricing-plans.html" class="nav-link">Plans & Pricing <i class="fa-solid fa-angle-down" style="font-size:0.7rem; margin-left:3px;"></i></a>
+            <ul class="nav-dropdown">
+              <li><a href="pricing-plans.html" class="dropdown-link">Pricing Plans</a></li>
+              <li><a href="#" class="dropdown-link open-login-modal">My Subscriptions</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link">Gallery</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SPLIT LANDING HERO SECTION -->
+    <section class="landing-split">
+      <div class="landing-left">
+        <span class="section-subtitle" style="margin-bottom: 0.5rem; display:block;">Exclusive Launch</span>
+        <h1 class="landing-title">Our Online Store Is Launching Soon</h1>
+        <p class="landing-desc">
+          We’re working hard behind the scenes to bring you something amazing! Get ready for premium real estate development services, expert consultations, and exclusive project updates—all at your fingertips.
+        </p>
+
+        <!-- Newsletter Subscription Box -->
+        <div class="landing-subscribe-box">
+          <h4>Subscribe now and stay updated on our launch, special offers, and the latest from Legacy Developers.</h4>
+          <form class="newsletter-form">
+            <div class="subscribe-form-row">
+              <input type="email" class="subscribe-input" placeholder="Enter your email here*" required>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+            <div class="subscribe-msg"></div>
+          </form>
+        </div>
+
+        <div style="margin-top: 2.5rem;">
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 0.8rem; font-weight: 600;">Connect With Us</p>
+          <div style="display:flex; gap: 0.8rem;">
+            <a href="https://facebook.com/wix" target="_blank" class="social-icon-btn"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/wix" target="_blank" class="social-icon-btn"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com/wix" target="_blank" class="social-icon-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com/company/wix-com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="landing-right">
+        <img src="https://static.wixstatic.com/media/nsplsh_b9e9580a19d5475a87f947aba8af7aa5~mv2.jpg" alt="Legacy Developers Lifestyle">
+      </div>
+    </section>
+
+    <!-- FOOTER / GET IN TOUCH -->
+    <footer class="site-footer" id="contact-section">
+      <div class="footer-content">
+        <div class="footer-contact-info">
+          <h2 class="footer-title">Get In Touch</h2>
+          <ul class="contact-meta-list">
+            <li class="contact-meta-item">
+              <i class="fa-solid fa-location-dot meta-icon"></i>
+              <div>
+                <p><strong>Office Address</strong></p>
+                <p>123 Legacy Avenue<br>San Francisco, CA 94158</p>
+              </div>
+            </li>
+            <li class="contact-meta-item">
+              <i class="fa-solid fa-envelope meta-icon"></i>
+              <div>
+                <p><strong>Email Us</strong></p>
+                <p><a href="mailto:info@legacydevelopers.com">info@legacydevelopers.com</a></p>
+              </div>
+            </li>
+            <li class="contact-meta-item">
+              <i class="fa-solid fa-phone meta-icon"></i>
+              <div>
+                <p><strong>Call Directly</strong></p>
+                <p><a href="tel:1234567890">123-456-7890</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-form-wrapper">
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="lndFirstName">First Name</label>
+              <input type="text" id="lndFirstName" class="form-input" placeholder="e.g. John" required>
+            </div>
+            <div class="form-group">
+              <label for="lndLastName">Last Name</label>
+              <input type="text" id="lndLastName" class="form-input" placeholder="e.g. Doe" required>
+            </div>
+            <div class="form-group col-full">
+              <label for="lndEmail">Email *</label>
+              <input type="email" id="lndEmail" class="form-input" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group col-full">
+              <label for="lndPhone">Phone</label>
+              <input type="tel" id="lndPhone" class="form-input" placeholder="123-456-7890">
+            </div>
+            <div class="form-group col-full">
+              <label for="lndComments">Comments</label>
+              <textarea id="lndComments" class="form-textarea" placeholder="How can we assist you?"></textarea>
+            </div>
+            <div class="form-success-alert"></div>
+            <button type="submit" class="btn btn-primary form-submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <p>© 2023 by Legacy Developers. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Pinned Social Bar -->
+  <aside class="pinned-social-bar">
+    <a href="https://facebook.com/wix" target="_blank" class="pinned-social-link"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://instagram.com/wix" target="_blank" class="pinned-social-link"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://yelp.com" target="_blank" class="pinned-social-link"><i class="fa-brands fa-yelp"></i></a>
+  </aside>
+
+  <!-- Floating Chat -->
+  <button class="floating-chat-btn" id="chatToggleBtn"><i class="fa-solid fa-message" style="font-size:1.4rem;"></i></button>
+  <div class="chat-modal" id="chatModal">
+    <div class="chat-header">
+      <h4>Legacy Chat</h4>
+      <button class="chat-close-btn" id="chatCloseBtn">&times;</button>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="chat-message bot">Be the first to know about our official online store launch! Any questions?</div>
+    </div>
+    <form class="chat-footer" id="chatForm">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Type a message..." required>
+      <button type="submit" class="btn btn-primary" style="padding:0.5rem 0.9rem; border-radius:50%;"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn">&times;</button>
+      <h3 class="modal-title">Welcome</h3>
+      <p class="modal-subtitle">Log in to your account</p>
+      <form id="loginForm">
+        <div class="form-group" style="margin-bottom:1.2rem;">
+          <label>Email Address</label>
+          <input type="email" class="form-input" style="background:#f4f4f4; color:#222; border-color:#ccc;" placeholder="you@domain.com" required>
+        </div>
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label>Password</label>
+          <input type="password" class="form-input" style="background:#f4f4f4; color:#222; border-color:#ccc;" placeholder="••••••••" required>
+        </div>
+        <div class="modal-alert" style="display:none; padding:0.8rem; background:#E8F5E9; color:#2E7D32; border-radius:4px; margin-bottom:1rem; text-align:center;"></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Log In</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

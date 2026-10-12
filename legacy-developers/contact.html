@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Legacy Developers</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Sail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= SITE HEADER ================= -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="brand-logo">
+        <a href="index.html">
+          <span>Legacy</span>
+          <span>Developers</span>
+        </a>
+      </div>
+
+      <div class="header-actions">
+        <a href="#" class="login-btn open-login-modal">
+          <div class="login-avatar"><i class="fa-solid fa-user"></i></div>
+          <span>Log In</span>
+        </a>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <div class="nav-container">
+        <ul class="nav-list" id="mainNavList">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="our-team.html" class="nav-link">Our Team</a></li>
+          <li class="nav-item"><a href="landing-page.html" class="nav-link">Landing Page</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="pricing-plans.html" class="nav-link">Plans & Pricing <i class="fa-solid fa-angle-down" style="font-size:0.7rem; margin-left:3px;"></i></a>
+            <ul class="nav-dropdown">
+              <li><a href="pricing-plans.html" class="dropdown-link">Pricing Plans</a></li>
+              <li><a href="#" class="dropdown-link open-login-modal">My Subscriptions</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link">Gallery</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PAGE TITLE BANNER -->
+    <section class="page-banner" style="height: 300px;">
+      <div class="banner-content">
+        <h1 class="banner-title">Contact Us</h1>
+        <p class="banner-desc">We look forward to discussing your architectural, building, or investment goals.</p>
+      </div>
+    </section>
+
+    <!-- FULL CONTACT & MAP SECTION -->
+    <section class="section" style="padding-top: 4rem;">
+      <div class="footer-content" style="background: transparent; color: inherit; padding: 0;">
+        <div class="footer-contact-info">
+          <h2 class="section-title" style="text-align: left; font-size: 2.8rem; margin-bottom: 1.5rem;">Let's Connect</h2>
+          <p style="font-size: 1.05rem; line-height: 1.8; color: var(--color-text-muted); margin-bottom: 2rem;">
+            Whether you are considering building a new custom estate from the ground up, modernizing an existing residence, or scheduling an expert architectural consultation, our team is at your disposal.
+          </p>
+
+          <ul class="contact-meta-list">
+            <li class="contact-meta-item">
+              <i class="fa-solid fa-location-dot meta-icon" style="color:var(--color-primary);"></i>
+              <div>
+                <p><strong>San Francisco Headquarters</strong></p>
+                <p style="color:var(--color-text);">123 Legacy Avenue<br>San Francisco, CA 94158</p>
+              </div>
+            </li>
+            <li class="contact-meta-item">
+              <i class="fa-solid fa-envelope meta-icon" style="color:var(--color-primary);"></i>
+              <div>
+                <p><strong>General Inquiries</strong></p>
+                <p><a href="mailto:info@legacydevelopers.com" style="color:var(--color-text);">info@legacydevelopers.com</a></p>
+              </div>
+            </li>
+            <li class="contact-meta-item">
+              <i class="fa-solid fa-phone meta-icon" style="color:var(--color-primary);"></i>
+              <div>
+                <p><strong>Direct Line</strong></p>
+                <p><a href="tel:1234567890" style="color:var(--color-text);">123-456-7890</a></p>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Embedded Map Card -->
+          <div style="margin-top: 2rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
+            <iframe 
+              src="https://maps.google.com/maps?q=San%20Francisco%20CA%2094158&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+              width="100%" 
+              height="250" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="footer-form-wrapper" style="background: var(--color-white); border-color: var(--color-border); box-shadow: var(--shadow-md);">
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="cntFirstName" style="color:var(--color-darker);">First Name</label>
+              <input type="text" id="cntFirstName" class="form-input" style="background:#f7f7f7; color:#222; border-color:#ddd;" placeholder="e.g. John" required>
+            </div>
+            <div class="form-group">
+              <label for="cntLastName" style="color:var(--color-darker);">Last Name</label>
+              <input type="text" id="cntLastName" class="form-input" style="background:#f7f7f7; color:#222; border-color:#ddd;" placeholder="e.g. Doe" required>
+            </div>
+            <div class="form-group col-full">
+              <label for="cntEmail" style="color:var(--color-darker);">Email *</label>
+              <input type="email" id="cntEmail" class="form-input" style="background:#f7f7f7; color:#222; border-color:#ddd;" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group col-full">
+              <label for="cntPhone" style="color:var(--color-darker);">Phone</label>
+              <input type="tel" id="cntPhone" class="form-input" style="background:#f7f7f7; color:#222; border-color:#ddd;" placeholder="123-456-7890">
+            </div>
+            <div class="form-group col-full">
+              <label for="cntComments" style="color:var(--color-darker);">Comments / Message</label>
+              <textarea id="cntComments" class="form-textarea" style="background:#f7f7f7; color:#222; border-color:#ddd;" placeholder="Tell us how we can help you..."></textarea>
+            </div>
+            <div class="form-success-alert"></div>
+            <button type="submit" class="btn btn-primary form-submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER BOTTOM BAR -->
+    <footer class="site-footer" style="padding-top: 2rem;">
+      <div class="footer-bottom-bar" style="border-top:none;">
+        <p>© 2023 by Legacy Developers. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Pinned Social Bar -->
+  <aside class="pinned-social-bar">
+    <a href="https://facebook.com/wix" target="_blank" class="pinned-social-link"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://instagram.com/wix" target="_blank" class="pinned-social-link"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://yelp.com" target="_blank" class="pinned-social-link"><i class="fa-brands fa-yelp"></i></a>
+  </aside>
+
+  <!-- Floating Chat -->
+  <button class="floating-chat-btn" id="chatToggleBtn"><i class="fa-solid fa-message" style="font-size:1.4rem;"></i></button>
+  <div class="chat-modal" id="chatModal">
+    <div class="chat-header">
+      <h4>Legacy Chat</h4>
+      <button class="chat-close-btn" id="chatCloseBtn">&times;</button>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="chat-message bot">Welcome! Send us a quick question right here.</div>
+    </div>
+    <form class="chat-footer" id="chatForm">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Type a message..." required>
+      <button type="submit" class="btn btn-primary" style="padding:0.5rem 0.9rem; border-radius:50%;"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn">&times;</button>
+      <h3 class="modal-title">Welcome</h3>
+      <p class="modal-subtitle">Log in to your account</p>
+      <form id="loginForm">
+        <div class="form-group" style="margin-bottom:1.2rem;">
+          <label>Email Address</label>
+          <input type="email" class="form-input" style="background:#f4f4f4; color:#222; border-color:#ccc;" placeholder="you@domain.com" required>
+        </div>
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label>Password</label>
+          <input type="password" class="form-input" style="background:#f4f4f4; color:#222; border-color:#ccc;" placeholder="••••••••" required>
+        </div>
+        <div class="modal-alert" style="display:none; padding:0.8rem; background:#E8F5E9; color:#2E7D32; border-radius:4px; margin-bottom:1rem; text-align:center;"></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Log In</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

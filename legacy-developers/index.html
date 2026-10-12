@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legacy Developers | Building Dreams, Creating Legacies</title>
+  
+  <!-- Google Fonts: Sail (Calligraphy Script) & Raleway (Clean Sans-Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Sail&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= SITE HEADER ================= -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="brand-logo">
+        <a href="index.html">
+          <span>Legacy</span>
+          <span>Developers</span>
+        </a>
+      </div>
+
+      <div class="header-actions">
+        <a href="#" class="login-btn open-login-modal">
+          <div class="login-avatar">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <span>Log In</span>
+        </a>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <div class="nav-container">
+        <ul class="nav-list" id="mainNavList">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="our-team.html" class="nav-link">Our Team</a></li>
+          <li class="nav-item"><a href="landing-page.html" class="nav-link">Landing Page</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="pricing-plans.html" class="nav-link">Plans & Pricing <i class="fa-solid fa-angle-down" style="font-size:0.7rem; margin-left:3px;"></i></a>
+            <ul class="nav-dropdown">
+              <li><a href="pricing-plans.html" class="dropdown-link">Pricing Plans</a></li>
+              <li><a href="#" class="dropdown-link open-login-modal">My Subscriptions</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link">Gallery</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
+    <!-- HERO SECTION WITH VIDEO BACKGROUND -->
+    <section class="hero-section">
+      <div class="hero-video-container">
+        <video class="hero-video" autoplay muted loop playsinline poster="https://static.wixstatic.com/media/11062b_8f14374b6fe149aab751d12c94c2676ff000.jpg">
+          <source src="https://video.wixstatic.com/video/11062b_8f14374b6fe149aab751d12c94c2676f/720p/mp4/file.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Legacy Developers</h1>
+        <p class="hero-subtitle">"Building Dreams, Creating Legacies"</p>
+        <div class="hero-buttons">
+          <a href="services.html" class="btn btn-primary">Our Services</a>
+          <a href="projects.html" class="btn btn-outline">Featured Work</a>
+          <a href="#contact-section" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHT SUMMARY SECTION -->
+    <section class="section">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Excellence in Development</span>
+        <h2 class="section-title">Crafting Timeless Spaces</h2>
+        <p style="max-width: 750px; margin: 1rem auto 0; color: var(--color-text-muted); font-size: 1.05rem;">
+          Legacy Developers is dedicated to delivering bespoke architectural solutions, custom luxury residences, and state-of-the-art modern spaces that stand the test of time.
+        </p>
+      </div>
+
+      <!-- Quick Feature Grid -->
+      <div class="approach-grid">
+        <div class="approach-item">
+          <div class="approach-step">01. Architectural Vision</div>
+          <h3 class="approach-title">Custom Homes</h3>
+          <p class="approach-text">Every residence is designed with unique character, harmonizing natural aesthetics and luxury living tailored to each client.</p>
+          <a href="services.html" style="display:inline-block; margin-top:1rem; color:var(--color-primary); font-weight:600;">Learn More &rarr;</a>
+        </div>
+        <div class="approach-item">
+          <div class="approach-step">02. Master Craftsmanship</div>
+          <h3 class="approach-title">Renovations & Additions</h3>
+          <p class="approach-text">Transforming historic and contemporary properties into exquisite modern living spaces with meticulous craftsmanship.</p>
+          <a href="services.html" style="display:inline-block; margin-top:1rem; color:var(--color-primary); font-weight:600;">Learn More &rarr;</a>
+        </div>
+        <div class="approach-item">
+          <div class="approach-step">03. Interior Elegance</div>
+          <h3 class="approach-title">Interior Design</h3>
+          <p class="approach-text">Curating high-end fixtures, flooring, and bespoke lighting that radiate sophistication and unparalleled comfort.</p>
+          <a href="services.html" style="display:inline-block; margin-top:1rem; color:var(--color-primary); font-weight:600;">Learn More &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED WORK PREVIEW SECTION -->
+    <section class="section" style="background: var(--color-white); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Portfolio Highlights</span>
+        <h2 class="section-title">Selected Projects</h2>
+      </div>
+
+      <div class="project-gallery-grid">
+        <div class="gallery-item span-2" data-lightbox data-caption="The Smith Residence - Modern Architectural Design">
+          <img src="https://static.wixstatic.com/media/ea26fd_19523efa2fa8436086b23656c3a724c0~mv2_d_4480_6720_s_4_2.jpg" alt="The Smith Residence">
+          <div class="gallery-item-overlay">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+        <div class="gallery-item" data-lightbox data-caption="Magnolia Estate - Luxury Living">
+          <img src="https://static.wixstatic.com/media/ea26fd_875401e2d67b40e1969387a0248c731d~mv2_d_6720_4480_s_4_2.jpg" alt="Magnolia Estate">
+          <div class="gallery-item-overlay">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+        <div class="gallery-item" data-lightbox data-caption="Lakeview Retreat - Peaceful Waterside Living">
+          <img src="https://static.wixstatic.com/media/ea26fd_720a028a68e240c2908ca458a0c9b5a8~mv2_d_6720_4480_s_4_2.jpg" alt="Lakeview Retreat">
+          <div class="gallery-item-overlay">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+        <div class="gallery-item span-2" data-lightbox data-caption="Interior Architecture - Refined Details">
+          <img src="https://static.wixstatic.com/media/ea26fd_bb30ad51551145aeb4e9348570e29b7b~mv2_d_6720_4480_s_4_2.jpg" alt="Interior Architecture">
+          <div class="gallery-item-overlay">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3.5rem;">
+        <a href="projects.html" class="btn btn-dark">View All Projects</a>
+      </div>
+    </section>
+
+    <!-- MEET THE TEAM TEASER -->
+    <section class="section">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">The Leadership</span>
+        <h2 class="section-title">Our Expert Team</h2>
+      </div>
+
+      <div class="team-grid">
+        <!-- Team Member 1 -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="https://static.wixstatic.com/media/a3c153_ea643fa0bec04606b8e22e51e7d510b4~mv2.jpg" alt="Don Francis" class="team-img">
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Don Francis</h3>
+            <p class="team-role">Founder & CEO</p>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="https://static.wixstatic.com/media/a3c153_d272d21cf9724e17be9e01ffe7173b88~mv2.jpg" alt="Ashley Jones" class="team-img">
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Ashley Jones</h3>
+            <p class="team-role">Lead Interior Designer</p>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="https://static.wixstatic.com/media/a3c153_91dc165103f9438bbc9a0216b278a11d~mv2.jpg" alt="Tess Brown" class="team-img">
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Tess Brown</h3>
+            <p class="team-role">Manager</p>
+          </div>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="https://static.wixstatic.com/media/a3c153_0225bd316b414eb88d3358ba488bde5e~mv2.jpg" alt="Lisa Rose" class="team-img">
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Lisa Rose</h3>
+            <p class="team-role">Head Architect</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="our-team.html" class="btn btn-outline" style="color:var(--color-darker); border-color:var(--color-darker);">Meet The Full Team</a>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER / GET IN TOUCH ================= -->
+    <footer class="site-footer" id="contact-section">
+      <div class="footer-content">
+        <!-- Left: Contact Details -->
+        <div class="footer-contact-info">
+          <h2 class="footer-title">Get In Touch</h2>
+          
+          <ul class="contact-meta-list">
+            <li class="contact-meta-item">
+              <i class="fa-solid fa-location-dot meta-icon"></i>
+              <div>
+                <p><strong>Office Address</strong></p>
+                <p>123 Legacy Avenue<br>San Francisco, CA 94158</p>
+              </div>
+            </li>
+            <li class="contact-meta-item">
+              <i class="fa-solid fa-envelope meta-icon"></i>
+              <div>
+                <p><strong>Email Us</strong></p>
+                <p><a href="mailto:info@legacydevelopers.com">info@legacydevelopers.com</a></p>
+              </div>
+            </li>
+            <li class="contact-meta-item">
+              <i class="fa-solid fa-phone meta-icon"></i>
+              <div>
+                <p><strong>Call Directly</strong></p>
+                <p><a href="tel:1234567890">123-456-7890</a></p>
+              </div>
+            </li>
+          </ul>
+
+          <div style="margin-top: 2rem;">
+            <p style="font-size: 0.9rem; color: #8E8880; margin-bottom: 0.8rem; text-transform: uppercase; letter-spacing: 1px;">Follow Our Journey</p>
+            <div style="display: flex; gap: 1rem;">
+              <a href="https://facebook.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://instagram.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://yelp.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-yelp"></i></a>
+              <a href="https://linkedin.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Working Contact Form -->
+        <div class="footer-form-wrapper">
+          <form class="contact-form" id="mainContactForm">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" class="form-input" placeholder="e.g. John" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" class="form-input" placeholder="e.g. Doe" required>
+            </div>
+            <div class="form-group col-full">
+              <label for="email">Email *</label>
+              <input type="email" id="email" class="form-input" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group col-full">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" class="form-input" placeholder="123-456-7890">
+            </div>
+            <div class="form-group col-full">
+              <label for="comments">Comments / Project Scope</label>
+              <textarea id="comments" class="form-textarea" placeholder="Tell us about your upcoming project..."></textarea>
+            </div>
+            <div class="form-success-alert"></div>
+            <button type="submit" class="btn btn-primary form-submit-btn">
+              <span>Submit</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>© 2023 by Legacy Developers. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ================= PINNED SOCIAL BAR (Bottom Left) ================= -->
+  <aside class="pinned-social-bar" aria-label="Social Links">
+    <a href="https://facebook.com/wix" target="_blank" class="pinned-social-link" title="Facebook">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a href="https://instagram.com/wix" target="_blank" class="pinned-social-link" title="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://yelp.com" target="_blank" class="pinned-social-link" title="Yelp">
+      <i class="fa-brands fa-yelp"></i>
+    </a>
+  </aside>
+
+  <!-- ================= FLOATING LIVE CHAT WIDGET (Bottom Right) ================= -->
+  <button class="floating-chat-btn" id="chatToggleBtn" aria-label="Open live chat">
+    <i class="fa-solid fa-message" style="font-size: 1.4rem;"></i>
+  </button>
+
+  <div class="chat-modal" id="chatModal">
+    <div class="chat-header">
+      <h4>Legacy Chat</h4>
+      <button class="chat-close-btn" id="chatCloseBtn">&times;</button>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="chat-message bot">
+        Hello! Welcome to Legacy Developers. How can we help you bring your architectural dream to life today?
+      </div>
+    </div>
+    <form class="chat-footer" id="chatForm">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Type a message..." required>
+      <button type="submit" class="btn btn-primary" style="padding: 0.5rem 0.9rem; border-radius: 50%;">
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </form>
+  </div>
+
+  <!-- ================= LOGIN / MEMBER MODAL ================= -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn">&times;</button>
+      <h3 class="modal-title">Welcome</h3>
+      <p class="modal-subtitle">Log in to your Legacy Developers account</p>
+      
+      <form id="loginForm">
+        <div class="form-group" style="margin-bottom: 1.2rem;">
+          <label for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" class="form-input" style="background:#f4f4f4; color:#222; border-color:#ccc;" placeholder="you@domain.com" required>
+        </div>
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+          <label for="loginPass">Password</label>
+          <input type="password" id="loginPass" class="form-input" style="background:#f4f4f4; color:#222; border-color:#ccc;" placeholder="••••••••" required>
+        </div>
+        <div class="modal-alert" style="display:none; padding:0.8rem; background:#E8F5E9; color:#2E7D32; border-radius:4px; margin-bottom:1rem; text-align:center;"></div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Log In</button>
+      </form>
+      <p style="text-align: center; margin-top: 1.5rem; font-size: 0.85rem; color: var(--color-text-muted);">
+        Don't have an account yet? <a href="#" style="color: var(--color-primary); font-weight: 600;">Sign Up</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- ================= LIGHTBOX MODAL ================= -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img src="" alt="Enlarged view" class="lightbox-img" id="lightboxImg">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

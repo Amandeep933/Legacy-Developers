@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plans & Pricing | Legacy Developers</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Sail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= SITE HEADER ================= -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="brand-logo">
+        <a href="index.html">
+          <span>Legacy</span>
+          <span>Developers</span>
+        </a>
+      </div>
+
+      <div class="header-actions">
+        <a href="#" class="login-btn open-login-modal">
+          <div class="login-avatar"><i class="fa-solid fa-user"></i></div>
+          <span>Log In</span>
+        </a>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <div class="nav-container">
+        <ul class="nav-list" id="mainNavList">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="our-team.html" class="nav-link">Our Team</a></li>
+          <li class="nav-item"><a href="landing-page.html" class="nav-link">Landing Page</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="pricing-plans.html" class="nav-link active">Plans & Pricing <i class="fa-solid fa-angle-down" style="font-size:0.7rem; margin-left:3px;"></i></a>
+            <ul class="nav-dropdown">
+              <li><a href="pricing-plans.html" class="dropdown-link">Pricing Plans</a></li>
+              <li><a href="#" class="dropdown-link open-login-modal">My Subscriptions</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link">Gallery</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- VIDEO HEADER BANNER -->
+    <section class="page-banner">
+      <div class="hero-video-container">
+        <video class="hero-video" autoplay muted loop playsinline poster="https://static.wixstatic.com/media/11062b_eb3f6c5a72c74c349b14cadcafa930d7f000.jpg">
+          <source src="https://video.wixstatic.com/video/11062b_eb3f6c5a72c74c349b14cadcafa930d7/720p/mp4/file.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="banner-content">
+        <h1 class="banner-title">Choose your pricing plan</h1>
+        <p class="banner-desc">Transparent investment tiers for comprehensive architectural advisory, custom planning, and executive development.</p>
+      </div>
+    </section>
+
+    <!-- PRICING TIERS SECTION -->
+    <section class="section">
+      <div class="pricing-container">
+        <!-- PLAN 1: BASIC CONSULTATION (From Wix Site) -->
+        <div class="pricing-card">
+          <h3 class="pricing-plan-name">Foundation Plan</h3>
+          <p class="pricing-plan-subtitle">Basic Consultation Plan</p>
+          
+          <div class="pricing-price-tag">
+            <span class="pricing-currency">$</span>
+            <span class="pricing-amount">199</span>
+            <span class="pricing-period">one-time consultation</span>
+          </div>
+
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> 1-on-1 Consultation with Lead Architect</li>
+            <li><i class="fa-solid fa-check"></i> Site Evaluation & Feasibility Assessment</li>
+            <li><i class="fa-solid fa-check"></i> Preliminary Blueprint Review</li>
+            <li><i class="fa-solid fa-check"></i> Material & Cost Estimate Breakdown</li>
+            <li><i class="fa-solid fa-check"></i> 30-day Post-meeting Follow Up</li>
+          </ul>
+
+          <button class="btn btn-dark btn-buy-plan" data-plan="Basic Consultation Plan ($199)" style="margin-top:auto;">Buy Now</button>
+        </div>
+
+        <!-- PLAN 2: EXECUTIVE DESIGN & BUILD (Popular) -->
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <h3 class="pricing-plan-name">Executive Plan</h3>
+          <p class="pricing-plan-subtitle">Architectural & 3D Render Package</p>
+          
+          <div class="pricing-price-tag">
+            <span class="pricing-currency">$</span>
+            <span class="pricing-amount">599</span>
+            <span class="pricing-period">comprehensive package</span>
+          </div>
+
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Everything in Foundation Plan</li>
+            <li><i class="fa-solid fa-check"></i> High-definition 3D Virtual Walkthrough</li>
+            <li><i class="fa-solid fa-check"></i> Full Structural Engineering Blueprints</li>
+            <li><i class="fa-solid fa-check"></i> Complete Interior Design Moodboards</li>
+            <li><i class="fa-solid fa-check"></i> City Permit Filing Documentation</li>
+          </ul>
+
+          <button class="btn btn-primary btn-buy-plan" data-plan="Executive Design Plan ($599)" style="margin-top:auto;">Buy Now</button>
+        </div>
+
+        <!-- PLAN 3: CUSTOM HERITAGE (Enterprise) -->
+        <div class="pricing-card">
+          <h3 class="pricing-plan-name">Heritage Plan</h3>
+          <p class="pricing-plan-subtitle">Turnkey Development Advisory</p>
+          
+          <div class="pricing-price-tag">
+            <span class="pricing-currency">$</span>
+            <span class="pricing-amount">1,499</span>
+            <span class="pricing-period">full-scale oversight</span>
+          </div>
+
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> End-to-End Project Supervision</li>
+            <li><i class="fa-solid fa-check"></i> Dedicated On-Site Senior Engineer</li>
+            <li><i class="fa-solid fa-check"></i> Exclusive Material Procurement Access</li>
+            <li><i class="fa-solid fa-check"></i> Contractor Vetting & Oversight</li>
+            <li><i class="fa-solid fa-check"></i> Priority 24/7 Concierge Support</li>
+          </ul>
+
+          <button class="btn btn-dark btn-buy-plan" data-plan="Custom Heritage Development ($1,499)" style="margin-top:auto;">Buy Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER / GET IN TOUCH -->
+    <footer class="site-footer" id="contact-section">
+      <div class="footer-content">
+        <div class="footer-contact-info">
+          <h2 class="footer-title">Get In Touch</h2>
+          <ul class="contact-meta-list">
+            <li class="contact-meta-item">
+              <i class="fa-solid fa-location-dot meta-icon"></i>
+              <div>
+                <p><strong>Office Address</strong></p>
+                <p>123 Legacy Avenue<br>San Francisco, CA 94158</p>
+              </div>
+            </li>
+            <li class="contact-meta-item">
+              <i class="fa-solid fa-envelope meta-icon"></i>
+              <div>
+                <p><strong>Email Us</strong></p>
+                <p><a href="mailto:info@legacydevelopers.com">info@legacydevelopers.com</a></p>
+              </div>
+            </li>
+            <li class="contact-meta-item">
+              <i class="fa-solid fa-phone meta-icon"></i>
+              <div>
+                <p><strong>Call Directly</strong></p>
+                <p><a href="tel:1234567890">123-456-7890</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-form-wrapper">
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="prcFirstName">First Name</label>
+              <input type="text" id="prcFirstName" class="form-input" placeholder="e.g. John" required>
+            </div>
+            <div class="form-group">
+              <label for="prcLastName">Last Name</label>
+              <input type="text" id="prcLastName" class="form-input" placeholder="e.g. Doe" required>
+            </div>
+            <div class="form-group col-full">
+              <label for="prcEmail">Email *</label>
+              <input type="email" id="prcEmail" class="form-input" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group col-full">
+              <label for="prcPhone">Phone</label>
+              <input type="tel" id="prcPhone" class="form-input" placeholder="123-456-7890">
+            </div>
+            <div class="form-group col-full">
+              <label for="prcComments">Comments / Custom Plan Requirements</label>
+              <textarea id="prcComments" class="form-textarea" placeholder="Tell us if you have custom pricing needs..."></textarea>
+            </div>
+            <div class="form-success-alert"></div>
+            <button type="submit" class="btn btn-primary form-submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <p>© 2023 by Legacy Developers. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Pinned Social Bar -->
+  <aside class="pinned-social-bar">
+    <a href="https://facebook.com/wix" target="_blank" class="pinned-social-link"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://instagram.com/wix" target="_blank" class="pinned-social-link"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://yelp.com" target="_blank" class="pinned-social-link"><i class="fa-brands fa-yelp"></i></a>
+  </aside>
+
+  <!-- Floating Chat -->
+  <button class="floating-chat-btn" id="chatToggleBtn"><i class="fa-solid fa-message" style="font-size:1.4rem;"></i></button>
+  <div class="chat-modal" id="chatModal">
+    <div class="chat-header">
+      <h4>Legacy Chat</h4>
+      <button class="chat-close-btn" id="chatCloseBtn">&times;</button>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="chat-message bot">Questions about our plans and consultation packages? We're here to assist.</div>
+    </div>
+    <form class="chat-footer" id="chatForm">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Type a message..." required>
+      <button type="submit" class="btn btn-primary" style="padding:0.5rem 0.9rem; border-radius:50%;"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn">&times;</button>
+      <h3 class="modal-title" id="checkoutPlanTitle">Selected Plan</h3>
+      <p class="modal-subtitle">Enter details to proceed with your booking</p>
+      <form id="checkoutForm">
+        <div class="form-group" style="margin-bottom:1rem;">
+          <label>Full Name</label>
+          <input type="text" class="form-input" style="background:#f4f4f4; color:#222; border-color:#ccc;" placeholder="Your Name" required>
+        </div>
+        <div class="form-group" style="margin-bottom:1rem;">
+          <label>Email Address</label>
+          <input type="email" class="form-input" style="background:#f4f4f4; color:#222; border-color:#ccc;" placeholder="name@example.com" required>
+        </div>
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label>Preferred Consultation Date</label>
+          <input type="date" class="form-input" style="background:#f4f4f4; color:#222; border-color:#ccc;" required>
+        </div>
+        <div class="modal-alert" style="display:none; padding:0.8rem; background:#E8F5E9; color:#2E7D32; border-radius:4px; margin-bottom:1rem; text-align:center;"></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Confirm & Reserve</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn">&times;</button>
+      <h3 class="modal-title">Welcome</h3>
+      <p class="modal-subtitle">Log in to your account</p>
+      <form id="loginForm">
+        <div class="form-group" style="margin-bottom:1.2rem;">
+          <label>Email Address</label>
+          <input type="email" class="form-input" style="background:#f4f4f4; color:#222; border-color:#ccc;" placeholder="you@domain.com" required>
+        </div>
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label>Password</label>
+          <input type="password" class="form-input" style="background:#f4f4f4; color:#222; border-color:#ccc;" placeholder="••••••••" required>
+        </div>
+        <div class="modal-alert" style="display:none; padding:0.8rem; background:#E8F5E9; color:#2E7D32; border-radius:4px; margin-bottom:1rem; text-align:center;"></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Log In</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
